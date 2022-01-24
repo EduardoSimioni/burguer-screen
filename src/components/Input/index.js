@@ -1,9 +1,9 @@
-import React from "react";
-import {Input as InputComp} from './styles'
+// import React from "react";
+// import {Input as InputComp} from './styles'
 
-function Input (){
+// function Input (...props){
 
-    return <InputComp></InputComp>
-}
+//     return <InputComp{...props}></InputComp>
+// }
 
-export default Input
+// export default Input

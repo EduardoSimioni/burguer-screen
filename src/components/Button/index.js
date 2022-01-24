@@ -1,9 +1,10 @@
 import React from "react";
 import {Button as ButtonComp} from './styles'
 
-function Button ({children, isBack}){
+function Button ({children, ...props}){
 
-    return <ButtonComp isBack={isBack}>{children}</ButtonComp>
+    return <ButtonComp {...props}>{children}</ButtonComp>
+    
 }
 
 export default Button

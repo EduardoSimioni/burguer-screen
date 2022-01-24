@@ -11,6 +11,12 @@ export const Button= styled.button`
     line-height: 2px;
     color: #FFFFFF;
     margin-top: 76px;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 0.8
+    }
+    
 
     ${props => props.isBack && `
         background: rgba(255, 255, 255, 0.14);`
