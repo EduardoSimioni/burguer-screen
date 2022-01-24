@@ -27,7 +27,7 @@ const Requests = () => {
       setOrder(newOrder)
     }
     fetchOrder()
-  },[])
+  }, [])
 
   async function deleteUser(orderId) {
     await axios.delete(`http://localhost:3001/allRequests/${orderId}`)
@@ -46,12 +46,12 @@ const Requests = () => {
       <Image alt="logo-imagem" src={Symbol} />
       <ContainerItens>
         <H1>Pedidos</H1>
-        
-          <ContainerButton>
+
+        <ContainerButton>
           {order.map(order => (
             <Order key={order.id}>
-              <ParagraphName>{order.name}</ParagraphName> 
-              
+              <ParagraphName>{order.name}</ParagraphName>
+
               <button onClick={() => deleteUser(order.id)}>
                 <img src={Thrash} alt="lata-de-lixo" />
               </button>
@@ -60,7 +60,7 @@ const Requests = () => {
             </Order>
           ))
           }
-          </ContainerButton>
+        </ContainerButton>
 
         <Button onClick={goBackPage} isBack={true}>Voltar</Button>
 

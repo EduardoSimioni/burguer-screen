@@ -23,12 +23,12 @@ const App = () => {
 
   async function addOrder() {
 
-     const { data: createOrder } = await axios.post("http://localhost:3001/allRequests", {
-       name:inputName.current.value,
-       order:inputOrder.current.value,
-     })
-     setOrder([...order, createOrder])
-     navigate("/requests")
+    const { data: createOrder } = await axios.post("http://localhost:3001/allRequests", {
+      name: inputName.current.value,
+      order: inputOrder.current.value,
+    })
+    setOrder([...order, createOrder])
+    navigate("/requests")
   }
 
   return (
@@ -37,10 +37,10 @@ const App = () => {
       <ContainerItens>
         <H1>Faça seu pedido!</H1>
         <InputLabel>Pedido</InputLabel>
-        <Input  ref={inputOrder}></Input>
+        <Input ref={inputOrder}></Input>
 
         <InputLabel>Nome do Cliente</InputLabel>
-        <Input  ref={inputName}></Input>
+        <Input ref={inputName}></Input>
 
         <Button onClick={addOrder}>Novo Pedido</Button>
 

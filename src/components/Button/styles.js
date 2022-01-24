@@ -16,7 +16,6 @@ export const Button= styled.button`
     &:hover{
         opacity: 0.8
     }
-    
 
     ${props => props.isBack && `
         background: rgba(255, 255, 255, 0.14);`

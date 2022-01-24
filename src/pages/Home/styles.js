@@ -11,7 +11,7 @@ export const Container = styled.div`
     
 `;
 
-export const Image = styled.img `
+export const Image = styled.img`
     margin-top: 30px;
     
 `;
@@ -22,7 +22,7 @@ export const ContainerItens = styled.div`
     align-items: center;
 `;
 
-export const Input= styled.input`
+export const Input = styled.input`
     background: rgba(255, 255, 255, 0.25);
     border-radius: 14px;    
     width: 342px;

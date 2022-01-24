@@ -54,9 +54,6 @@ export const ContainerButton = styled.div`
         opacity: 0.6
     }
     }
-
-        
-    
 `;
 
 export const ParagraphOrder = styled.li`
